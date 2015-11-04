@@ -1,4 +1,4 @@
-# to speed up file load, colClasses are defined and used, which in turn requires setAs Data coercion function definition
+# to speed up file load, colClasses are defined and used, which in turn requires setAs Data coercion function definition 
 
 setAs("character","myDate", function(from) as.Date(from, format="%d/%m/%Y") )
 classes <- c("myDate","character","numeric","numeric","numeric","numeric","numeric","numeric","numeric")
